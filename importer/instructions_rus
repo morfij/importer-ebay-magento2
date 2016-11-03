@@ -1,0 +1,13 @@
+1. Скопировать в папку importer/source исходник файла в csv формате
+2. В файле importer/importer.php. Изменить значения: 
+a)const TABLE_NAME = 'table_name';
+b)const OLD_FILE_NAME = 'source_file_name';
+c)const NEW_FILE_NAME = 'new_file_name';
+
+a) Название новой таблицы, в которую будет занесены данные из файла (будет создана автоматически)
+для каждого файла с исходными продуктами необходима новая таблица
+b) Название исходного файла (без расширения)
+с) Название нового файла для импорта в magento2 (без расширения)
+
+3. В браузере запускаем http://devgalaxy.magemojo.com/importer/importer.php.
+4. В папке importer/import генерируется файл для импорта в magento2.
